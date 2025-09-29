@@ -11,7 +11,9 @@ const ThemeSelector = () => {
         <PaletteIcon className="size-5" />
       </button>
 
-      <div className="dropdown-content mt-2 p-1 shadow-2xl bg-base backdrop=blur-lg rounded-2xl w-56 border-base-content/10 max-h-80 overflow-y-auto">
+      <div tabIndex={0}
+        className="dropdown-content mt-2 p-1 shadow-2xl bg-base-200 backdrop-blur-lg rounded-2xl
+        w-56 border border-base-content/10 max-h-80 overflow-y-auto">
         <div className="space-y-1">
           {THEMES.map((themeOption) => (
             <button
